@@ -1,0 +1,33 @@
+<div style="display: flex; flex-direction: column; align-items: center">
+  <h1>Employee Hours</h1>
+  <table  >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Total Time Worked</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let emp of employees"
+        [ngStyle]="{
+          'background-color': emp.totalTime < 100 ? '#ffcccc' : 'transparent'
+        }"
+      >
+        <td style="text-align: center">{{ emp.EmployeeName }}</td>
+        <td style="text-align: center">{{ emp.totalTime }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>Employee Hours - Pie Chart</h1>
+  <div style="width: 450px; height: 400px">
+    <canvas
+      baseChart
+      [data]="pieChartData"
+      [type]="pieChartType"
+      [options]="pieChartOptions"
+    >
+    </canvas>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+table {
+  width: 50%;
+  font-size: 15px;
+  line-height: 30px;
+  border-collapse: collapse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+table,
+th,
+td {
+  border: 1px solid grey;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+th {
+  background-color: #f2f2f2;
+}
